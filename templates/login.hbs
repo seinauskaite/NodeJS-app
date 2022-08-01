@@ -1,0 +1,26 @@
+<style>
+    div {
+        padding: 20px;
+    }
+    button, input {
+        border: none;
+    }
+    .message {
+        color: rgb(199, 17, 17);
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+</style>
+
+{{#if message}}
+<div class='message'>{{message}}</div>
+{{/if}}
+<div>
+<form method="POST">
+    <label>email address</label> 
+    <input type="email" name="email" />
+    <label>password</label>
+    <input type="password" name="password"/>
+    <button type="submit">LOGIN</button>
+</form>
+</div>

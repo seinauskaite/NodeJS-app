@@ -1,0 +1,12 @@
+<div>
+    {{#if paslaugos}}
+        <h1>Kintamojo Rezultatai</h1>
+        <ul>
+            {{#each paslaugos}}
+                <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        {{else}} 
+            <h2>nera data</h2>
+        {{/if}}
+</div>
